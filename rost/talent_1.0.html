@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- page name-->
+    <title>Rost | talent_1.0</title>
+    <!-- Required meta tags-->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=0"/>
+    <!-- Optional styles-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link href="s/css/all.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="l-wrapper">
+      <header class="c-header">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-2 col-5 align-items-center d-flex">
+              <button type="button" class="c-header__mmenu js-open-mmenu"><span></span></button><a href="#" class="c-header__logo">
+                <svg width="1em" height="1em" class="icon icon-logo ">
+                  <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-logo"></use>
+                </svg></a>
+            </div>
+            <div class="col-sm-5 d-none d-sm-block">
+              <div class="c-header__date c-header-date">
+                <div class="c-header-date__ico">
+                  <svg width="1em" height="1em" class="icon icon-calendar ">
+                    <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-calendar"></use>
+                  </svg>
+                </div><span class="c-header-date__text">12.02.2020</span><span class="c-header-date__text">13:00</span>
+              </div>
+            </div>
+            <div class="col-sm-3 col-5">
+              <div class="c-header__actions">
+                <div class="c-header__notify c-header-notify"><a href="#" class="c-header-notify__btn">
+                    <svg width="1em" height="1em" class="icon icon-notify ">
+                      <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-notify"></use>
+                    </svg><span class="c-header-notify__count">7</span></a></div>
+                <div class="c-header__search c-header-search">
+                  <form action="/" class="c-header-search__form">
+                    <input type="text" placeholder="Глобальный поиск" class="c-header-search__field"/>
+                    <button type="button" class="c-header-search__btn">
+                      <svg width="1em" height="1em" class="icon icon-search ">
+                        <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-search"></use>
+                      </svg>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="left-side">
+                <div class="mobile-burger">
+                  <div class="mobile-burger__head">
+                    <button type="button" class="mobile-burger__btn js-close-mmenu"><span></span></button>
+                  </div>
+                  <div class="mobile-burger__content">
+                    <div class="c-cabinet">
+                      <h3 class="e-title--sm">Кабинет</h3>
+                      <button type="button" class="c-cabinet__btn">Рабочий
+                        <div class="c-cabinet__list">
+                          <div class="c-cabinet__items"><a href="#" class="c-cabinet__item">Личный</a><a href="#" class="c-cabinet__item">Рабочий</a><a href="#" class="c-cabinet__item">Админ</a></div>
+                        </div></button>
+                    </div>
+                    <div class="c-menu">
+                      <h3 class="e-title--sm">Меню</h3>
+                      <div class="c-menu__wrapper">
+                        <ul class="h-reset-list c-menu__list">
+                          <li class="c-menu__item"><a href="#" class="c-menu__link">
+                              <svg width="1em" height="1em" class="icon icon-community c-menu__ico">
+                                <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-community"></use>
+                              </svg><span class="c-menu__txt">Сообщества</span></a></li>
+                          <li class="c-menu__item"><a href="#" class="c-menu__link">
+                              <svg width="1em" height="1em" class="icon icon-event c-menu__ico">
+                                <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-event"></use>
+                              </svg><span class="c-menu__txt">События</span></a></li>
+                          <li class="c-menu__item"><a href="#" class="c-menu__link">
+                              <svg width="1em" height="1em" class="icon icon-insti c-menu__ico">
+                                <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-insti"></use>
+                              </svg><span class="c-menu__txt">Учреждение</span></a></li>
+                          <li class="c-menu__item"><a href="#" class="c-menu__link">
+                              <svg width="1em" height="1em" class="icon icon-monitoring c-menu__ico">
+                                <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-monitoring"></use>
+                              </svg><span class="c-menu__txt">Мониторинг</span></a></li>
+                          <li class="c-menu__item"><a href="#" class="c-menu__link">
+                              <svg width="1em" height="1em" class="icon icon-search c-menu__ico">
+                                <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-search"></use>
+                              </svg><span class="c-menu__txt">Поиск талантов</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-sm-10">
+              <div class="main-content">
+                <div class="c-talent-search">
+                  <h2 class="e-title--md">Поиск Талантов</h2>
+                  <div class="c-talent-search__wrapper">
+                    <div class="c-talent-search__nav e-nav-line">
+                      <ul id="searchNav" role="tablist" class="nav">
+                        <li class="nav-item"><a id="search-main-tab" data-toggle="tab" href="#search-main" role="tab" aria-controls="search-main" aria-selected="true" class="nav-link active">Поиск</a></li>
+                        <li class="nav-item"><a id="search-favourites-tab" data-toggle="tab" href="#search-favourites" role="tab" aria-controls="search-favourites" aria-selected="false" class="nav-link">Избранное<span class="count">(4)</span></a></li>
+                      </ul>
+                      <button type="button" class="e-btn e-btn--filled c-talent-search__btn-menu"> Фильтр</button>
+                      <div class="form-group global-search">
+                        <div class="form-control">
+                          <svg width="1em" height="1em" class="icon icon-search ">
+                            <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-search"></use>
+                          </svg>
+                          <input placeholder="Поиск ID" id="search" name="search" autocomplete="off" class="e-input"/>
+                        </div>
+                      </div>
+                      <div class="c-talent-search__filter">
+                        <div class="e-time-filter"><span class="e-time-filter__title">Сортировать:</span>
+                          <button type="button" class="e-time-filter__btn">По количеству призов
+                            <div class="e-time-filter__options">
+                              <ul class="h-reset-list e-time-filter__list e-time-filter-list">
+                                <li class="e-time-filter-list__item">
+                                  <div class="form-radio font-regular">
+                                    <input type="radio" name="1" id="1" class="e-radio"/>
+                                    <label for="1" class="e-label">По количеству призов</label>
+                                  </div>
+                                  <div class="form-radio font-regular">
+                                    <input type="radio" name="2" id="2" class="e-radio"/>
+                                    <label for="2" class="e-label">По количеству участий</label>
+                                  </div>
+                                  <div class="form-radio font-regular">
+                                    <input type="radio" name="3" id="3" class="e-radio"/>
+                                    <label for="3" class="e-label">По общему количеству</label>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                      <div id="infoNavContent" class="tab-content">
+                        <div id="search-main" role="tabpanel" aria-labelledby="search-main-tab" class="tab-pane fade show active">
+                          <div class="c-user-item c-talent-search__item">
+                            <div class="c-user-item__info"><span class="c-user-item__name">Смирнова Василиса Андрееевна , 8 лет</span>
+                              <div class="c-user-item__id"><span class="c-user-item__id-txt">ID:</span><span class="c-user-item__id-val">000000000098</span></div>
+                              <div class="c-user-item__stats">
+                                <div class="c-user-item__stat"><span class="c-user-item__stat-txt">Призы -</span><span class="c-user-item__stat-val">5</span></div>
+                                <div class="c-user-item__stat"><span class="c-user-item__stat-txt">Участие -</span><span class="c-user-item__stat-val">3</span></div>
+                              </div>
+                            </div>
+                            <div class="c-edit__wrapper">
+                              <button type="button" class="c-edit">
+                                <svg width="1em" height="1em" class="icon icon-border-down ">
+                                  <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-border-down"></use>
+                                </svg>
+                                <div class="c-edit__options">
+                                  <div class="c-edit__items"><a href="#" class="c-edit__item">Показать профиль</a><a href="#" class="c-edit__item">В избранное</a>
+                                  </div>
+                                </div>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="c-user-item c-talent-search__item">
+                            <div class="c-user-item__info"><span class="c-user-item__name">Калашников Егор Валентинович, 8 лет</span>
+                              <div class="c-user-item__id"><span class="c-user-item__id-txt">ID:</span><span class="c-user-item__id-val">000000000098</span></div>
+                              <div class="c-user-item__stats">
+                                <div class="c-user-item__stat"><span class="c-user-item__stat-txt">Призы -</span><span class="c-user-item__stat-val">5</span></div>
+                                <div class="c-user-item__stat"><span class="c-user-item__stat-txt">Участие -</span><span class="c-user-item__stat-val">3</span></div>
+                              </div>
+                            </div>
+                            <div class="c-edit__wrapper">
+                              <button type="button" class="c-edit">
+                                <svg width="1em" height="1em" class="icon icon-border-down ">
+                                  <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-border-down"></use>
+                                </svg>
+                                <div class="c-edit__options">
+                                  <div class="c-edit__items"><a href="#" class="c-edit__item">Показать профиль</a><a href="#" class="c-edit__item">В избранное</a>
+                                  </div>
+                                </div>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="c-user-item c-talent-search__item">
+                            <div class="c-user-item__info"><span class="c-user-item__name">Колокольникова Светлана Александровна , 10 лет</span>
+                              <div class="c-user-item__id"><span class="c-user-item__id-txt">ID:</span><span class="c-user-item__id-val">000000000098</span></div>
+                              <div class="c-user-item__stats">
+                                <div class="c-user-item__stat"><span class="c-user-item__stat-txt">Призы -</span><span class="c-user-item__stat-val">5</span></div>
+                                <div class="c-user-item__stat"><span class="c-user-item__stat-txt">Участие -</span><span class="c-user-item__stat-val">3</span></div>
+                              </div>
+                            </div>
+                            <div class="c-edit__wrapper">
+                              <button type="button" class="c-edit">
+                                <svg width="1em" height="1em" class="icon icon-border-down ">
+                                  <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-border-down"></use>
+                                </svg>
+                                <div class="c-edit__options">
+                                  <div class="c-edit__items"><a href="#" class="c-edit__item">Показать профиль</a><a href="#" class="c-edit__item">В избранное</a>
+                                  </div>
+                                </div>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="c-user-item c-talent-search__item">
+                            <div class="c-user-item__info"><span class="c-user-item__name">Колокольникова Светлана Александровна , 10 лет</span>
+                              <div class="c-user-item__id"><span class="c-user-item__id-txt">ID:</span><span class="c-user-item__id-val">000000000098</span></div>
+                              <div class="c-user-item__stats">
+                                <div class="c-user-item__stat"><span class="c-user-item__stat-txt">Призы -</span><span class="c-user-item__stat-val">5</span></div>
+                                <div class="c-user-item__stat"><span class="c-user-item__stat-txt">Участие -</span><span class="c-user-item__stat-val">3</span></div>
+                              </div>
+                            </div>
+                            <div class="c-edit__wrapper">
+                              <button type="button" class="c-edit">
+                                <svg width="1em" height="1em" class="icon icon-border-down ">
+                                  <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-border-down"></use>
+                                </svg>
+                                <div class="c-edit__options">
+                                  <div class="c-edit__items"><a href="#" class="c-edit__item">Показать профиль</a><a href="#" class="c-edit__item">В избранное</a>
+                                  </div>
+                                </div>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="c-user-item c-talent-search__item">
+                            <div class="c-user-item__info"><span class="c-user-item__name">Колокольникова Светлана Александровна , 10 лет</span>
+                              <div class="c-user-item__id"><span class="c-user-item__id-txt">ID:</span><span class="c-user-item__id-val">000000000098</span></div>
+                              <div class="c-user-item__stats">
+                                <div class="c-user-item__stat"><span class="c-user-item__stat-txt">Призы -</span><span class="c-user-item__stat-val">5</span></div>
+                                <div class="c-user-item__stat"><span class="c-user-item__stat-txt">Участие -</span><span class="c-user-item__stat-val">3</span></div>
+                              </div>
+                            </div>
+                            <div class="c-edit__wrapper">
+                              <button type="button" class="c-edit">
+                                <svg width="1em" height="1em" class="icon icon-border-down ">
+                                  <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-border-down"></use>
+                                </svg>
+                                <div class="c-edit__options">
+                                  <div class="c-edit__items"><a href="#" class="c-edit__item">Показать профиль</a><a href="#" class="c-edit__item">В избранное</a>
+                                  </div>
+                                </div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="search-favourites" role="tabpanel" aria-labelledby="search-favourites-tab" class="tab-pane fade">
+                          <div class="c-user-item c-talent-search__item">
+                            <div class="c-user-item__info"><span class="c-user-item__name">Смирнова Василиса Андрееевна , 8 лет</span>
+                              <div class="c-user-item__id"><span class="c-user-item__id-txt">ID:</span><span class="c-user-item__id-val">000000000098</span></div>
+                              <div class="c-user-item__stats">
+                                <div class="c-user-item__stat"><span class="c-user-item__stat-txt">Призы -</span><span class="c-user-item__stat-val">5</span></div>
+                                <div class="c-user-item__stat"><span class="c-user-item__stat-txt">Участие -</span><span class="c-user-item__stat-val">3</span></div>
+                              </div>
+                            </div>
+                            <div class="c-edit__wrapper">
+                              <button type="button" class="c-edit">
+                                <svg width="1em" height="1em" class="icon icon-border-down ">
+                                  <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-border-down"></use>
+                                </svg>
+                                <div class="c-edit__options">
+                                  <div class="c-edit__items"><a href="#" class="c-edit__item">Показать профиль</a><a href="#" class="c-edit__item">В избранное</a>
+                                  </div>
+                                </div>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="c-user-item c-talent-search__item">
+                            <div class="c-user-item__info"><span class="c-user-item__name">Калашников Егор Валентинович, 8 лет</span>
+                              <div class="c-user-item__id"><span class="c-user-item__id-txt">ID:</span><span class="c-user-item__id-val">000000000098</span></div>
+                              <div class="c-user-item__stats">
+                                <div class="c-user-item__stat"><span class="c-user-item__stat-txt">Призы -</span><span class="c-user-item__stat-val">5</span></div>
+                                <div class="c-user-item__stat"><span class="c-user-item__stat-txt">Участие -</span><span class="c-user-item__stat-val">3</span></div>
+                              </div>
+                            </div>
+                            <div class="c-edit__wrapper">
+                              <button type="button" class="c-edit">
+                                <svg width="1em" height="1em" class="icon icon-border-down ">
+                                  <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-border-down"></use>
+                                </svg>
+                                <div class="c-edit__options">
+                                  <div class="c-edit__items"><a href="#" class="c-edit__item">Показать профиль</a><a href="#" class="c-edit__item">В избранное</a>
+                                  </div>
+                                </div>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="c-user-item c-talent-search__item">
+                            <div class="c-user-item__info"><span class="c-user-item__name">Колокольникова Светлана Александровна , 10 лет</span>
+                              <div class="c-user-item__id"><span class="c-user-item__id-txt">ID:</span><span class="c-user-item__id-val">000000000098</span></div>
+                              <div class="c-user-item__stats">
+                                <div class="c-user-item__stat"><span class="c-user-item__stat-txt">Призы -</span><span class="c-user-item__stat-val">5</span></div>
+                                <div class="c-user-item__stat"><span class="c-user-item__stat-txt">Участие -</span><span class="c-user-item__stat-val">3</span></div>
+                              </div>
+                            </div>
+                            <div class="c-edit__wrapper">
+                              <button type="button" class="c-edit">
+                                <svg width="1em" height="1em" class="icon icon-border-down ">
+                                  <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-border-down"></use>
+                                </svg>
+                                <div class="c-edit__options">
+                                  <div class="c-edit__items"><a href="#" class="c-edit__item">Показать профиль</a><a href="#" class="c-edit__item">В избранное</a>
+                                  </div>
+                                </div>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="c-user-item c-talent-search__item">
+                            <div class="c-user-item__info"><span class="c-user-item__name">Колокольникова Светлана Александровна , 10 лет</span>
+                              <div class="c-user-item__id"><span class="c-user-item__id-txt">ID:</span><span class="c-user-item__id-val">000000000098</span></div>
+                              <div class="c-user-item__stats">
+                                <div class="c-user-item__stat"><span class="c-user-item__stat-txt">Призы -</span><span class="c-user-item__stat-val">5</span></div>
+                                <div class="c-user-item__stat"><span class="c-user-item__stat-txt">Участие -</span><span class="c-user-item__stat-val">3</span></div>
+                              </div>
+                            </div>
+                            <div class="c-edit__wrapper">
+                              <button type="button" class="c-edit">
+                                <svg width="1em" height="1em" class="icon icon-border-down ">
+                                  <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-border-down"></use>
+                                </svg>
+                                <div class="c-edit__options">
+                                  <div class="c-edit__items"><a href="#" class="c-edit__item">Показать профиль</a><a href="#" class="c-edit__item">В избранное</a>
+                                  </div>
+                                </div>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="c-user-item c-talent-search__item">
+                            <div class="c-user-item__info"><span class="c-user-item__name">Колокольникова Светлана Александровна , 10 лет</span>
+                              <div class="c-user-item__id"><span class="c-user-item__id-txt">ID:</span><span class="c-user-item__id-val">000000000098</span></div>
+                              <div class="c-user-item__stats">
+                                <div class="c-user-item__stat"><span class="c-user-item__stat-txt">Призы -</span><span class="c-user-item__stat-val">5</span></div>
+                                <div class="c-user-item__stat"><span class="c-user-item__stat-txt">Участие -</span><span class="c-user-item__stat-val">3</span></div>
+                              </div>
+                            </div>
+                            <div class="c-edit__wrapper">
+                              <button type="button" class="c-edit">
+                                <svg width="1em" height="1em" class="icon icon-border-down ">
+                                  <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-border-down"></use>
+                                </svg>
+                                <div class="c-edit__options">
+                                  <div class="c-edit__items"><a href="#" class="c-edit__item">Показать профиль</a><a href="#" class="c-edit__item">В избранное</a>
+                                  </div>
+                                </div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="right-side w280">
+                <div class="c-filter">
+                  <div class="c-event-sidebar__head mobile-burger__head">
+                    <button type="button" class="mobile-burger__btn js-close-mmenu c-event-sidebar__close"><span></span></button>
+                  </div>
+                  <div class="c-event-sidebar__content">
+                    <div class="c-filter__head"><span class="c-filter__title">Фильтр</span>
+                      <button type="button" class="c-filter__clear">Сбросить</button>
+                    </div>
+                    <div class="c-filter__body">
+                      <div class="form-group e-input-autocomplete">
+                        <label for="autocomplete-city" class="e-label">Город</label>
+                        <div class="form-control">
+                          <input type="text" placeholder="Начните вводить" id="autocomplete-city" name="autocomplete-city" autocomplete="off" required="required" class="e-input"/>
+                        </div>
+                      </div>
+                      <div class="multiselect">
+                        <div class="form-group">
+                          <div class="c-multiselect">
+                            <label class="e-label">Профориентация</label>
+                            <div class="c-multiselect__wrapper">
+                              <div class="c-multiselect__trigger"><span>Не выбрано</span>
+                                <div class="c-multiselect__arrow">
+                                  <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                                    <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                                  </svg>
+                                </div>
+                              </div>
+                              <div class="c-multiselect__options">
+                                <ul class="h-reset-list">
+                                  <li>
+                                    <div class="c-multiselect__option">
+                                      <label for="programmer">- Програмирование</label>
+                                      <input type="checkbox" id="programmer" class="e-checkbox"/>
+                                    </div>
+                                    <ul class="h-reset-list">
+                                      <li>
+                                        <div class="c-multiselect__option">
+                                          <label for="java">+ Java</label>
+                                          <input type="checkbox" id="java" class="e-checkbox"/>
+                                        </div>
+                                      </li>
+                                      <li> 
+                                        <div class="c-multiselect__option">
+                                          <label for="cplus">C++</label>
+                                          <input type="checkbox" id="cplus" class="e-checkbox"/>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                  <li> 
+                                    <div class="c-multiselect__option">
+                                      <label for="aerobic">+ Аэробика</label>
+                                      <input type="checkbox" id="aerobic" class="e-checkbox"/>
+                                    </div>
+                                  </li>
+                                  <li> 
+                                    <div class="c-multiselect__option">
+                                      <label for="football">+ Футбол</label>
+                                      <input type="checkbox" id="football" class="e-checkbox"/>
+                                    </div>
+                                  </li>
+                                  <li> 
+                                    <div class="c-multiselect__option">
+                                      <label for="robot">+ Робототехника</label>
+                                      <input type="checkbox" id="robot" class="e-checkbox"/>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-wrap two-inputs">
+                        <label class="e-label">Возраст</label>
+                        <div class="form-row form-row-two">
+                          <div class="form-group">
+                            <label for="organizator" class="e-label">от</label>
+                            <div class="form-control">
+                              <input type="text" id="organizator" name="organizator" autocomplete="off" class="e-input"/>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="organizator" class="e-label">до</label>
+                            <div class="form-control">
+                              <input type="text" id="organizator" name="organizator" autocomplete="off" class="e-input"/>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-select">
+                        <label class="e-label">Пол</label>
+                        <div class="c-select__wrapper">
+                          <div class="c-select__trigger"><span>Не выбрано</span>
+                            <div class="c-select__arrow">
+                              <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                                <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="c-select__options"><span data-value='0' class="c-select__option selected"></span><span data-value='1' class="c-select__option">1</span><span data-value='2' class="c-select__option">2</span><span data-value='3' class="c-select__option">3</span><span data-value='4' class="c-select__option">4</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-select">
+                        <label class="e-label">Призы</label>
+                        <div class="c-select__wrapper">
+                          <div class="c-select__trigger"><span>Не выбрано</span>
+                            <div class="c-select__arrow">
+                              <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                                <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="c-select__options"><span data-value='5' class="c-select__option selected"></span><span data-value='6' class="c-select__option">2</span><span data-value='7' class="c-select__option">3</span><span data-value='8' class="c-select__option">4</span><span data-value='9' class="c-select__option">5</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-select">
+                        <label class="e-label">Участие</label>
+                        <div class="c-select__wrapper">
+                          <div class="c-select__trigger"><span>Все</span>
+                            <div class="c-select__arrow">
+                              <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                                <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="c-select__options"><span data-value='10' class="c-select__option selected"></span><span data-value='11' class="c-select__option">2</span><span data-value='12' class="c-select__option">3</span><span data-value='13' class="c-select__option">4</span><span data-value='14' class="c-select__option">5</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-wrap two-inputs">
+                        <label class="e-label">Дата событий</label>
+                        <div class="form-row form-row-two">
+                          <div class="form-group">
+                            <label for="organizator" class="e-label">от</label>
+                            <div class="form-control">
+                              <input type="text" id="organizator" name="organizator" autocomplete="off" class="e-input"/>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="organizator" class="e-label">до</label>
+                            <div class="form-control">
+                              <input type="text" id="organizator" name="organizator" autocomplete="off" class="e-input"/>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-select">
+                        <label class="e-label">Тип протокола</label>
+                        <div class="c-select__wrapper">
+                          <div class="c-select__trigger"><span>Не выбрано</span>
+                            <div class="c-select__arrow">
+                              <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                                <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="c-select__options"><span data-value='15' class="c-select__option selected"></span><span data-value='16' class="c-select__option">1</span><span data-value='17' class="c-select__option">2</span><span data-value='18' class="c-select__option">3</span><span data-value='19' class="c-select__option">4</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="s/js/main.js"></script>
+  </body>
+</html>

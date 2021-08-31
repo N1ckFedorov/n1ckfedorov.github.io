@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- page name-->
+    <title>Rost | 0.1</title>
+    <!-- Required meta tags-->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=0"/>
+    <!-- Optional styles-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link href="s/css/all.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="l-wrapper">
+      <header class="c-header">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-2 col-5 align-items-center d-flex"><a href="#" class="c-header__logo">
+                <svg width="1em" height="1em" class="icon icon-logo ">
+                  <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-logo"></use>
+                </svg></a>
+            </div>
+            <div class="col-sm-5 d-none d-sm-block">
+            </div>
+            <div class="col-sm-3 col-5">
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="left-side">
+                <div class="mobile-burger">
+                  <div class="mobile-burger__head">
+                    <button type="button" class="mobile-burger__btn js-close-mmenu"><span></span></button>
+                  </div>
+                  <div class="mobile-burger__content">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-10">
+              <div class="main-content">
+                <div class="c-entry">
+                  <div class="c-entry__tabs">
+                    <ul id="entryForm" role="tablist" class="nav c-entry__nav">
+                      <li class="nav-item"><a id="registation-tab" data-toggle="tab" href="#registation" role="tab" aria-controls="registation" aria-selected="true" class="nav-link active">Регистрация</a></li>
+                      <li class="nav-item"><a id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="false" class="nav-link">Вход</a></li>
+                    </ul>
+                    <div id="entryFormContent" class="tab-content c-entry__content">
+                      <div id="registation" role="tabpanel" aria-labelledby="registation-tab" class="tab-pane fade show active">
+                        <form action="/" id="c-entry__registation" class="c-entry__registration-form">
+                          <div class="c-entry__line">
+                            <div class="form-group">
+                              <label for="userName" class="e-label">Имя</label>
+                              <div class="form-control">
+                                <input type="text" id="userName" name="userName" autocomplete="off" required="required" class="e-input"/>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="userSurname" class="e-label">Фамилия</label>
+                              <div class="form-control">
+                                <input type="text" id="userSurname" name="userSurname" autocomplete="off" required="required" class="e-input"/>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="c-entry__line">
+                            <div class="form-group">
+                              <label for="userEmail" class="e-label">Email</label>
+                              <div class="form-control">
+                                <input type="email" id="userEmail" name="userEmail" autocomplete="off" required="required" class="e-input"/>
+                              </div>
+                            </div>
+                            <div class="form-group phone-mask">
+                              <label for="userPhone" class="e-label">Телефон</label>
+                              <div class="form-control">
+                                <input type="number" id="userPhone" value="" name="userPhone" autocomplete="off" required="required" class="e-input"/>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="c-entry__line">
+                            <div class="form-group e-input-autocomplete">
+                              <label for="autocomplete-city" class="e-label">Город</label>
+                              <div class="form-control">
+                                <input type="text" placeholder="Начните вводить" id="autocomplete-city" name="autocomplete-city" autocomplete="off" required="required" class="e-input"/>
+                              </div>
+                            </div>
+                            <div class="c-select">
+                              <label class="e-label">Район</label>
+                              <div class="c-select__wrapper">
+                                <div class="c-select__trigger"><span>Не выбрано</span>
+                                  <div class="c-select__arrow">
+                                    <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                                      <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                                    </svg>
+                                  </div>
+                                </div>
+                                <div class="c-select__options"><span data-value='0' class="c-select__option selected"></span><span data-value='1' class="c-select__option">Василеостровский</span><span data-value='2' class="c-select__option">Выборгский</span><span data-value='3' class="c-select__option">Калининский</span><span data-value='4' class="c-select__option">Кировский</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="c-entry__line">
+                            <div class="c-select">
+                              <label class="e-label">Округ</label>
+                              <div class="c-select__wrapper">
+                                <div class="c-select__trigger"><span>Не выбрано</span>
+                                  <div class="c-select__arrow">
+                                    <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                                      <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                                    </svg>
+                                  </div>
+                                </div>
+                                <div class="c-select__options"><span data-value='5' class="c-select__option selected"></span><span data-value='6' class="c-select__option">Василеостровский</span><span data-value='7' class="c-select__option">Выборгский</span><span data-value='8' class="c-select__option">Калининский</span><span data-value='9' class="c-select__option">Кировский</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="c-entry__line">
+                            <div class="form-group password-ico">
+                              <label for="userPassword" class="e-label">Пароль</label>
+                              <div class="form-control">
+                                <input type="password" id="userPassword" name="userPassword" autocomplete="off" required="required" class="e-input"/>
+                                <button type="button" class="e-password-display">
+                                  <svg width="1em" height="1em" class="icon icon-open-eye ">
+                                    <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-open-eye"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="form-group password-ico">
+                              <label for="userPasswordRepeat" class="e-label">Повторите пароль</label>
+                              <div class="form-control">
+                                <input type="text" id="userPasswordRepeat" name="userPasswordRepeat" autocomplete="off" required="required" class="e-input"/>
+                                <button type="button" class="e-password-display">
+                                  <svg width="1em" height="1em" class="icon icon-close-eye ">
+                                    <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close-eye"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="c-entry__line c-entry__line--mt">
+                            <button type="submit" class="e-btn e-btn--filled e-btn--md">Зарегистрироваться</button><span class="c-entry__agreement">Нажимая “Зарегистрироваться” вы даёте согласие на обработку персональных данных</span>
+                          </div>
+                        </form>
+                      </div>
+                      <div id="login" role="tabpanel" aria-labelledby="login-tab" class="tab-pane fade">
+                        <form action="/" id="c-entry__login" class="c-entry__login-form">
+                          <div class="c-entry__line">
+                            <div class="form-group">
+                              <label for="userEmail" class="e-label">Email</label>
+                              <div class="form-control">
+                                <input type="email" id="userEmail" name="userEmail" autocomplete="off" required="required" class="e-input"/>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="c-entry__line">
+                            <div class="form-group password-ico">
+                              <label for="userPassword" class="e-label">Пароль</label>
+                              <div class="form-control">
+                                <input type="password" id="userPassword" name="userPassword" autocomplete="off" required="required" class="e-input"/>
+                                <button type="button" class="e-password-display">
+                                  <svg width="1em" height="1em" class="icon icon-open-eye ">
+                                    <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-open-eye"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="c-entry__line c-entry__line--mt">
+                            <button type="submit" class="e-btn e-btn--filled">Войти</button>
+                          </div>
+                          <div class="c-entry__line"><a href="#" class="e-link e-link--login">Забыли пароль?</a></div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="right-side">
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="s/js/main.js"></script>
+  </body>
+</html>

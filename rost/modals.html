@@ -1,0 +1,1643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- page name-->
+    <title>Rost | modals</title>
+    <!-- Required meta tags-->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=0"/>
+    <!-- Optional styles-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link href="s/css/all.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="l-wrapper">
+      <header class="c-header">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-2 col-5 align-items-center d-flex"><a href="#" class="c-header__logo">
+                <svg width="1em" height="1em" class="icon icon-logo ">
+                  <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-logo"></use>
+                </svg></a>
+            </div>
+            <div class="col-sm-5 d-none d-sm-block">
+            </div>
+            <div class="col-sm-3 col-5">
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="left-side">
+                <div class="mobile-burger">
+                  <div class="mobile-burger__head">
+                    <button type="button" class="mobile-burger__btn js-close-mmenu"><span></span></button>
+                  </div>
+                  <div class="mobile-burger__content">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-10">
+              <div class="main-content">
+                <h3 class="e-title--tac">Модальные окна</h3>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-select-role" class="e-btn e-btn--filled e-btn--mt5">Выберете роль</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-welcome" class="e-btn e-btn--filled e-btn--mt5">Добро пожаловать</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-file-load" class="e-btn e-btn--filled e-btn--mt5">Загрузка файла(фотографии)</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-community-load" class="e-btn e-btn--filled e-btn--mt5">Загрузка файла(фотографии) сообщества</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-file-load-fail" class="e-btn e-btn--filled e-btn--mt5">Загрузка файла(ошибка)</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-photo-edit-user" class="e-btn e-btn--filled e-btn--mt5">Редактирование фото</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-photo-edit-community" class="e-btn e-btn--filled e-btn--mt5">Редактирование фото сообщества</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-diplom-load" class="e-btn e-btn--filled e-btn--mt5">Загрузка диплома</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-add-achievement" class="e-btn e-btn--filled e-btn--mt5">Добавить достижение</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-img" class="e-btn e-btn--filled e-btn--mt5">Модальное окно с изображением</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-create-notify" class="e-btn e-btn--filled e-btn--mt5">Страница сообщества/Создание уведомления</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-create-event" class="e-btn e-btn--filled e-btn--mt5">Страница сообщества/Создание события</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-add-news" class="e-btn e-btn--filled e-btn--mt5">Добавить новость</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-report" class="e-btn e-btn--filled e-btn--mt5">Пожаловаться</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-change-pass" class="e-btn e-btn--filled e-btn--mt5">Сменить пароль</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-child-info" class="e-btn e-btn--filled e-btn--mt5">Информация о ребёнке</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-child-delete" class="e-btn e-btn--filled e-btn--mt5">Удалить профиль ребенка</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-add-admin" class="e-btn e-btn--filled e-btn--mt5">Добавить администратора </button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-send-invite" class="e-btn e-btn--filled e-btn--mt5">Выслать приглашение</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-send-invite-error" class="e-btn e-btn--filled e-btn--mt5">Выслать приглашение(ошибка)</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-verification" class="e-btn e-btn--filled e-btn--mt5">Верифицировать сотрудника</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-push-community" class="e-btn e-btn--filled e-btn--mt5">Привязать сообщество к учреждению</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-create-community" class="e-btn e-btn--filled e-btn--mt5">Создать сообщество</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-admin" class="e-btn e-btn--filled e-btn--mt5">Администрирование</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-structure" class="e-btn e-btn--filled e-btn--mt5">Структура РОСТ</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-inst-adm" class="e-btn e-btn--filled e-btn--mt5">Назначить админа</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-inst" class="e-btn e-btn--filled e-btn--mt5">Создать учреждение</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-inst-remove1" class="e-btn e-btn--filled e-btn--mt5">Удалить1</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-inst-remove2" class="e-btn e-btn--filled e-btn--mt5">Удалить2</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-inst-remove3" class="e-btn e-btn--filled e-btn--mt5">Удалить3</button>
+                </div>
+                <div class="row">
+                  <button type="button" data-toggle="modal" data-target="#modal-create-protocol" class="e-btn e-btn--filled e-btn--mt5">Создание протокола</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="right-side">
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div id="modal-select-role" tabindex="-1" role="dialog" aria-labelledby="modal-select-role-title" aria-hidden="true" class="modal fade c-modal-select-role">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-select-role__wrapper">
+              <h2 class="modal__title">Выберете роль :</h2>
+              <p class="modal__subtitle modal__subtitle--tac">Выберите одну или несколько ролей в системе. В дальейшем вы сможете поменять их в настройках.</p>
+              <form action="" class="c-modal-select-role__form">
+                <div class="c-modal-select-role__action-block">
+                  <div class="e-role"><span>Родитель</span>
+                    <input type="checkbox" class="e-checkbox"/>
+                  </div>
+                  <div class="e-tooltip"><span class="e-tooltip__title">Официальный представитель</span>
+                    <button type="button" class="e-tooltip__btn">
+                      <svg width="1em" height="1em" class="icon icon-question ">
+                        <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-question"></use>
+                      </svg>
+                      <div class="e-tooltip__wrapper">
+                        <p class="e-tooltip__text">Официальный представитель - это законный родитель ребенка. Здесь будет полноценный текст про представителя.</p>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="c-modal-select-role__action-block">
+                  <div class="e-role"><span>Самозанятый</span>
+                    <input type="checkbox" class="e-checkbox"/>
+                  </div>
+                  <div class="e-tooltip"><span class="e-tooltip__title">Репетитор</span>
+                    <button type="button" class="e-tooltip__btn">
+                      <svg width="1em" height="1em" class="icon icon-question ">
+                        <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-question"></use>
+                      </svg>
+                      <div class="e-tooltip__wrapper">
+                        <p class="e-tooltip__text">Официальный представитель - это законный родитель ребенка. Здесь будет полноценный текст про представителя.</p>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="c-modal-select-role__action-block">
+                  <div class="e-role"><span>Сотрудник</span>
+                    <input type="checkbox" class="e-checkbox"/>
+                  </div>
+                  <div class="e-tooltip"><span class="e-tooltip__title">Сотрудник учреждения</span>
+                    <button type="button" class="e-tooltip__btn">
+                      <svg width="1em" height="1em" class="icon icon-question ">
+                        <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-question"></use>
+                      </svg>
+                      <div class="e-tooltip__wrapper">
+                        <p class="e-tooltip__text">Официальный представитель - это законный родитель ребенка. Здесь будет полноценный текст про представителя.</p>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+                <button type="submit" class="e-btn e-btn--filled c-modal-select-role__next">Продолжить</button>
+                <button type="button" data-dismiss="modal" aria-label="Close" class="e-btn--clear c-modal-select-role__skip">Пропустить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-welcome" tabindex="-1" role="dialog" aria-labelledby="modal-welcome-title" aria-hidden="true" class="modal fade c-modal-welcome">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-welcome__wrapper">
+              <h2 class="modal__title">Добро пожаловать!</h2>
+              <p class="modal__subtitle modal__subtitle--tac">Здесь будет большой текст с приветствием для пользователя. Здесь будет большой текст с приветствием для пользователя. Здесь будет большой текст с приветствием для пользователя.</p>
+              <button type="button" data-dismiss="modal" aria-label="Close" class="e-btn e-btn--filled e-btn--mt5">Продолжить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div tabindex="-1" role="dialog" aria-labelledby="modal-file-load" aria-hidden="true" id="modal-file-load" class="modal fade c-modal-file-load">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-file-load__wrapper">
+              <h2 class="modal__title">Загрузка фотографии</h2>
+              <p class="modal__subtitle modal__subtitle--tac">Загрузите свою настоящую фотографию в формате JPG.</p>
+              <div class="c-modal-file-load__file e-input-file">
+                <label class="e-btn e-btn--filled">Выбрать файл
+                  <input id="user-avatar" type="file" name="user-avatar"/>
+                </label>
+              </div><span class="c-modal-file-load__info">Макс. 5 мб.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div tabindex="-1" role="dialog" aria-labelledby="modal-file-load" aria-hidden="true" id="modal-diplom-load" class="modal fade c-modal-file-load">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-file-load__wrapper">
+              <h2 class="modal__title">Загрузка диплома</h2>
+              <p class="modal__subtitle modal__subtitle--tac">Загрузите свою димплом или грамоту в формате JPG.</p>
+              <div class="c-modal-file-load__file e-input-file">
+                <label class="e-btn e-btn--filled">Выбрать файл
+                  <input id="user-avatar" type="file" name="user-avatar"/>
+                </label>
+              </div><span class="c-modal-file-load__info">Макс. 5 мб.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div tabindex="-1" role="dialog" aria-labelledby="modal-file-load" aria-hidden="true" id="modal-community-load" class="modal fade c-modal-file-load">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-file-load__wrapper">
+              <h2 class="modal__title">Загрузка фотографии</h2>
+              <p class="modal__subtitle modal__subtitle--tac">Загрузите фотографию сообщества в формате JPG. </p>
+              <div class="c-modal-file-load__file e-input-file">
+                <label class="e-btn e-btn--filled">Выбрать файл
+                  <input id="user-avatar" type="file" name="user-avatar"/>
+                </label>
+              </div><span class="c-modal-file-load__info">Макс. 5 мб.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-file-load-fail" tabindex="-1" role="dialog" aria-labelledby="modal-file-load" aria-hidden="true" class="modal fade c-modal-file-load-fail">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-file-load-fail__wrapper">
+              <h2 class="modal__title">Не получилось</h2>
+              <p class="modal__subtitle modal__subtitle--tac">Фотография не соответсвует заданным параметрам.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div tabindex="-1" role="dialog" aria-labelledby="modal-file-load" aria-hidden="true" id="modal-photo-edit-user" class="modal fade c-modal-photo-edit">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-photo-edit__wrapper">
+              <svg width="1em" height="1em" class="icon icon-photo ">
+                <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-photo"></use>
+              </svg>
+              <p class="modal__subtitle modal__subtitle--tac">Выберите область, которая будет отображаться в вашем профиле</p>
+              <div class="c-modal-photo-edit__action">
+                <div class="c-modal-photo-edit__action-img"><img src="s/images/tmp_file/photo-wide.jpg" alt=""/></div>
+                <button type="button" class="e-btn e-btn--filled">Сохранить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div tabindex="-1" role="dialog" aria-labelledby="modal-file-load" aria-hidden="true" id="modal-photo-edit-community" class="modal fade c-modal-photo-edit">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-photo-edit__wrapper">
+              <svg width="1em" height="1em" class="icon icon-photo ">
+                <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-photo"></use>
+              </svg>
+              <p class="modal__subtitle modal__subtitle--tac">Выберите область, которая будет отображаться в вашем сообществе</p>
+              <div class="c-modal-photo-edit__action">
+                <div class="c-modal-photo-edit__action-img"><img src="s/images/tmp_file/photo-wide.jpg" alt=""/></div>
+                <button type="button" class="e-btn e-btn--filled">Сохранить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-add-achievement" tabindex="-1" role="dialog" aria-labelledby="modal-file-load" aria-hidden="true" class="c-modal-add-achievement modal fade">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-add-achievement__wrapper">
+              <h2 class="modal__title">Добавить достижение</h2>
+              <form class="c-modal-add-achievement__form">
+                <div class="form-group">
+                  <label for="name" class="e-label">Название события</label>
+                  <div class="form-control">
+                    <input type="text" id="name" name="name" autocomplete="off" class="e-input"/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="achievement" class="e-label">Достижение</label>
+                  <div class="form-control">
+                    <input type="text" id="achievement" name="achievement" autocomplete="off" class="e-input"/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="organizator" class="e-label">Организатор</label>
+                  <div class="form-control">
+                    <input type="text" id="organizator" name="organizator" autocomplete="off" class="e-input"/>
+                  </div>
+                </div>
+                <button type="button" class="c-modal-add-achievement__img">
+                  <svg width="1em" height="1em" class="icon icon-photo ">
+                    <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-photo"></use>
+                  </svg>
+                </button><span class="c-modal-add-achievement__desc">Добавить/Изменить диплом или грамоту</span>
+                <button type="button" class="c-modal-add-achievement__btn e-btn e-btn--filled">Добавить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-img" tabindex="-1" role="dialog" aria-labelledby="modal-img" aria-hidden="true" class="c-modal-img modal fade">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body"><img src="s/images/tmp_file/diplom.png" alt=""/></div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-create-notify" tabindex="-1" role="dialog" aria-labelledby="modal-create-notify" aria-hidden="true" class="c-modal-create-notify modal fade">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-create-notify__wrapper">
+              <h2 class="modal__title">Создание уведомления</h2>
+              <form class="c-modal-create-notify__form">
+                <div class="form-group e-input-textarea h100">
+                  <label class="e-label">Текст уведомления (max 500 символов)</label>
+                  <div class="form-control">
+                    <textarea name="" class="e-textarea"></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="date" class="e-label">Дата</label>
+                  <div class="form-control">
+                    <input type="date" placeholder="Не выбрано" id="date" value="" name="date" autocomplete="off" class="e-input"/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="time" class="e-label">Время</label>
+                  <div class="form-control">
+                    <input type="time" placeholder="Не выбрано" id="time" name="time" autocomplete="off" class="e-input"/>
+                  </div>
+                </div>
+                <button type="button" class="e-btn e-btn--filled">Создать</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-create-event" tabindex="-1" role="dialog" aria-labelledby="modal-create-event" aria-hidden="true" class="c-modal-create-event modal fade">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-create-event__wrapper">
+              <h2 class="modal__title">Создать событие</h2>
+              <form class="c-modal-create-event__form">
+                <div class="form-group">
+                  <label for="name" class="e-label">Название события</label>
+                  <div class="form-control">
+                    <input type="text" id="name" name="name" autocomplete="off" class="e-input"/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="c-multiselect">
+                    <label class="e-label">Профориентация</label>
+                    <div class="c-multiselect__wrapper">
+                      <div class="c-multiselect__trigger"><span>Не выбрано</span>
+                        <div class="c-multiselect__arrow">
+                          <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                            <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="c-multiselect__options">
+                        <ul class="h-reset-list">
+                          <li>
+                            <div class="c-multiselect__option">
+                              <label for="programmer">- Програмирование</label>
+                              <input type="checkbox" id="programmer" class="e-checkbox"/>
+                            </div>
+                            <ul class="h-reset-list">
+                              <li>
+                                <div class="c-multiselect__option">
+                                  <label for="java">+ Java</label>
+                                  <input type="checkbox" id="java" class="e-checkbox"/>
+                                </div>
+                              </li>
+                              <li> 
+                                <div class="c-multiselect__option">
+                                  <label for="cplus">C++</label>
+                                  <input type="checkbox" id="cplus" class="e-checkbox"/>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li> 
+                            <div class="c-multiselect__option">
+                              <label for="aerobic">+ Аэробика</label>
+                              <input type="checkbox" id="aerobic" class="e-checkbox"/>
+                            </div>
+                          </li>
+                          <li> 
+                            <div class="c-multiselect__option">
+                              <label for="football">+ Футбол</label>
+                              <input type="checkbox" id="football" class="e-checkbox"/>
+                            </div>
+                          </li>
+                          <li> 
+                            <div class="c-multiselect__option">
+                              <label for="robot">+ Робототехника</label>
+                              <input type="checkbox" id="robot" class="e-checkbox"/>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-select w100-sm">
+                  <label class="e-label">Дата события</label>
+                  <div class="c-select__wrapper">
+                    <div class="c-select__trigger"><span>Не выбрано</span>
+                      <div class="c-select__arrow">
+                        <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                          <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="c-select__options"><span data-value='0' class="c-select__option selected"></span><span data-value='1' class="c-select__option">1</span><span data-value='2' class="c-select__option">2</span><span data-value='3' class="c-select__option">3</span><span data-value='4' class="c-select__option">4</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-select w100-sm">
+                  <label class="e-label">Время события</label>
+                  <div class="c-select__wrapper">
+                    <div class="c-select__trigger"><span>Не выбрано</span>
+                      <div class="c-select__arrow">
+                        <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                          <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="c-select__options"><span data-value='5' class="c-select__option selected"></span><span data-value='6' class="c-select__option">1</span><span data-value='7' class="c-select__option">2</span><span data-value='8' class="c-select__option">3</span><span data-value='9' class="c-select__option">4</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="organizator" class="e-label">Город</label>
+                  <div class="form-control">
+                    <input type="text" id="organizator" name="organizator" autocomplete="off" class="e-input"/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="organizator" class="e-label">Адрес</label>
+                  <div class="form-control">
+                    <input type="text" id="organizator" name="organizator" autocomplete="off" class="e-input"/>
+                  </div>
+                </div>
+                <button type="button" class="c-modal-create-event__img">
+                  <svg width="1em" height="1em" class="icon icon-photo ">
+                    <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-photo"></use>
+                  </svg>
+                </button><span class="c-modal-create-event__desc">Добавить фото события</span>
+                <button type="button" class="c-modal-create-event__btn e-btn e-btn--filled">Добавить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-add-news" tabindex="-1" role="dialog" aria-labelledby="modal-add-news" aria-hidden="true" class="c-modal-add-news modal fade">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-add-news__wrapper">
+              <h2 class="modal__title">Добавление новости</h2>
+              <form class="c-modal-add-news__form">
+                <div class="form-group">
+                  <label class="e-label">Текст новости (max 500 символов)</label>
+                  <div class="form-control">
+                    <textarea name="" class="e-textarea"></textarea>
+                  </div>
+                </div>
+                <div class="c-modal-add-news__list">
+                  <div class="c-modal-add-news__item c-modal-add-news-item"><img src="s/images/tmp_file/news.jpg" alt="" class="c-modal-add-news-item__img"/>
+                    <button type="button" class="c-modal-add-news-item__btn">
+                      <svg width="1em" height="1em" class="icon icon-close-circle ">
+                        <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close-circle"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="c-modal-add-news__item c-modal-add-news-item"><img src="s/images/tmp_file/news.jpg" alt="" class="c-modal-add-news-item__img"/>
+                    <button type="button" class="c-modal-add-news-item__btn">
+                      <svg width="1em" height="1em" class="icon icon-close-circle ">
+                        <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close-circle"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="c-modal-add-news__item c-modal-add-news-item"><img src="s/images/tmp_file/news.jpg" alt="" class="c-modal-add-news-item__img"/>
+                    <button type="button" class="c-modal-add-news-item__btn">
+                      <svg width="1em" height="1em" class="icon icon-close-circle ">
+                        <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close-circle"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="c-modal-add-news__item c-modal-add-news-item"><img src="s/images/tmp_file/news.jpg" alt="" class="c-modal-add-news-item__img"/>
+                    <button type="button" class="c-modal-add-news-item__btn">
+                      <svg width="1em" height="1em" class="icon icon-close-circle ">
+                        <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close-circle"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="c-modal-add-news__item c-modal-add-news-item"><img src="s/images/tmp_file/news.jpg" alt="" class="c-modal-add-news-item__img"/>
+                    <button type="button" class="c-modal-add-news-item__btn">
+                      <svg width="1em" height="1em" class="icon icon-close-circle ">
+                        <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close-circle"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="c-modal-add-news__item c-modal-add-news-item">
+                    <svg width="1em" height="1em" class="icon icon-photo ">
+                      <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-photo"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="e-attach-document">
+                  <input id="file-input" type="file" name="file"/>
+                  <label for="file-input">Прикрепить документ (max 3)</label>
+                </div>
+                <div class="c-modal-add-news__docs">
+                  <div class="c-modal-add-news__doc"><span class="c-modal-add-news__doc-name">presa.docx</span>
+                    <svg width="1em" height="1em" class="icon icon-close-circle-white ">
+                      <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close-circle-white"></use>
+                    </svg>
+                  </div>
+                  <div class="c-modal-add-news__doc"><span class="c-modal-add-news__doc-name">Очень длинное название документа</span>
+                    <svg width="1em" height="1em" class="icon icon-close-circle-white ">
+                      <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close-circle-white"></use>
+                    </svg>
+                  </div>
+                </div>
+                <button type="submit" class="e-btn e-btn--filled c-modal-add-news__btn">Добавить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-report" tabindex="-1" role="dialog" aria-labelledby="modal-add-news" aria-hidden="true" class="c-modal-report modal fade">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-report__wrapper">
+              <h2 class="modal__title">Пожаловаться</h2>
+              <form class="c-modal-report__form">
+                <div class="form-group">
+                  <label class="e-label">Причина (max 500 символов)</label>
+                  <div class="form-control">
+                    <textarea name="" class="e-textarea"></textarea>
+                  </div>
+                </div>
+                <button type="submit" class="e-btn e-btn--filled c-modal-report__btn">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-change-pass" tabindex="-1" role="dialog" aria-labelledby="modal-add-news" aria-hidden="true" class="c-modal-change-pass modal fade">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-change-pass__wrapper">
+              <h2 class="modal__title">Сменить пароль</h2>
+              <form class="c-modal-change-pass__form">
+                <div class="form-group">
+                  <label for="userPassword" class="e-label">Старый пароль</label>
+                  <div class="form-control">
+                    <input type="password" id="userPassword" name="userPassword" autocomplete="off" required="required" class="e-input"/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="userPasswordRepeat" class="e-label">Новый пароль</label>
+                  <div class="form-control">
+                    <input type="password" id="userPasswordRepeat" name="userPasswordRepeat" autocomplete="off" required="required" class="e-input"/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="userPasswordRepeat" class="e-label">Повторите пароль</label>
+                  <div class="form-control">
+                    <input type="password" id="userPasswordRepeat" name="userPasswordRepeat" autocomplete="off" required="required" class="e-input"/>
+                  </div>
+                </div>
+                <button type="submit" class="e-btn e-btn--filled e-btn--md">Сохранить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-child-info" tabindex="-1" role="dialog" aria-labelledby="modal-add-news" aria-hidden="true" class="c-modal-child-info modal fade">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-child-info__wrapper">
+              <h2 class="modal__title">Информация о ребёнке</h2>
+              <form class="c-modal-child-info__form">
+                <div class="form-group">
+                  <label for="userName" class="e-label">Имя</label>
+                  <div class="form-control">
+                    <input type="text" id="userName" name="userName" autocomplete="off" required="required" class="e-input"/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="userdate" class="e-label">Дата рождения</label>
+                  <div class="form-control">
+                    <input type="date" id="userdate" name="userdate" autocomplete="off" required="required" class="e-input"/>
+                  </div>
+                </div>
+                <div class="c-select">
+                  <label class="e-label">Пол</label>
+                  <div class="c-select__wrapper">
+                    <div class="c-select__trigger"><span>Не выбрано</span>
+                      <div class="c-select__arrow">
+                        <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                          <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="c-select__options"><span data-value='10' class="c-select__option selected"></span><span data-value='11' class="c-select__option">Мужской</span><span data-value='12' class="c-select__option">Женский</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-multiselect">
+                  <label class="e-label">Профориентация</label>
+                  <div class="c-multiselect__wrapper">
+                    <div class="c-multiselect__trigger"><span>Не выбрано</span>
+                      <div class="c-multiselect__arrow">
+                        <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                          <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                        </svg>
+                      </div>
+                      <div class="c-multiselect__options">
+                        <ul class="h-reset-list">
+                          <li>
+                            <div class="c-multiselect__option">
+                              <label for="programmer">- Програмирование</label>
+                              <input type="checkbox" id="programmer" class="e-checkbox"/>
+                            </div>
+                            <ul class="h-reset-list">
+                              <li>
+                                <div class="c-multiselect__option">
+                                  <label for="java">+ Java</label>
+                                  <input type="checkbox" id="java" class="e-checkbox"/>
+                                </div>
+                              </li>
+                              <li> 
+                                <div class="c-multiselect__option">
+                                  <label for="cplus">C++</label>
+                                  <input type="checkbox" id="cplus" class="e-checkbox"/>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li> 
+                            <div class="c-multiselect__option">
+                              <label for="aerobic">+ Аэробика</label>
+                              <input type="checkbox" id="aerobic" class="e-checkbox"/>
+                            </div>
+                          </li>
+                          <li> 
+                            <div class="c-multiselect__option">
+                              <label for="football">+ Футбол</label>
+                              <input type="checkbox" id="football" class="e-checkbox"/>
+                            </div>
+                          </li>
+                          <li> 
+                            <div class="c-multiselect__option">
+                              <label for="robot">+ Робототехника</label>
+                              <input type="checkbox" id="robot" class="e-checkbox"/>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="e-btn e-btn--filled e-btn--md">Сохранить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-child-delete" tabindex="-1" role="dialog" aria-labelledby="modal-welcome-title" aria-hidden="true" class="c-modal-child-delete modal fade">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-child-delete__wrapper">
+              <h2 class="modal__title">Удалить профиль ребёнка?</h2>
+              <p class="modal__subtitle modal__subtitle--tac">После удаления все данные будут утеряны безвозвратно</p>
+              <button type="button" data-dismiss="modal" aria-label="Close" class="e-btn e-btn--filled e-btn--mt5">Удалить профиль</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-add-admin" tabindex="-1" role="dialog" aria-labelledby="modal-add-admin" aria-hidden="true" class="c-modal-add-admin modal fade">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-add-admin__wrapper">
+              <h2 class="modal__title">Добавить администратора</h2>
+              <form class="c-modal-add-admin__form">
+                <div class="form-group">
+                  <label for="name" class="e-label">ID или E-mail</label>
+                  <div class="form-control">
+                    <input type="text" id="name" name="name" autocomplete="off" class="e-input"/>
+                  </div>
+                </div>
+                <button type="submit" class="c-modal-add-admin__btn e-btn e-btn--filled">Добавить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div tabindex="-1" role="dialog" aria-labelledby="modal-add-admin" aria-hidden="true" id="modal-send-invite-error" class="c-modal-send-invite modal fade">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-send-invite__wrapper">
+              <h2 class="modal__title">Выслать приглашение</h2>
+              <form class="c-modal-send-invite__form">
+                <div class="form-group error">
+                  <label for="name" class="e-label">ID или E-mail</label>
+                  <div class="form-control">
+                    <input type="text" id="name" name="name" autocomplete="off" class="e-input"/><span class="form-group__error">Пользователь не найден. Проверьте правильность введенной информации</span>
+                  </div>
+                </div>
+                <button type="submit" class="c-modal-send-invite__btn e-btn e-btn--filled">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div tabindex="-1" role="dialog" aria-labelledby="modal-add-admin" aria-hidden="true" id="modal-send-invite" class="c-modal-send-invite modal fade">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-send-invite__wrapper">
+              <h2 class="modal__title">Выслать приглашение</h2>
+              <form class="c-modal-send-invite__form">
+                <div class="form-group">
+                  <label for="name" class="e-label">ID или E-mail</label>
+                  <div class="form-control">
+                    <input type="text" id="name" name="name" autocomplete="off" class="e-input"/>
+                  </div>
+                </div>
+                <button type="submit" class="c-modal-send-invite__btn e-btn e-btn--filled">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div tabindex="-1" role="dialog" aria-labelledby="modal-push-community" aria-hidden="true" id="modal-push-community" class="c-modal-push-community modal fade">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-push-community__wrapper">
+              <h2 class="modal__title">Привязать сообщество к учреждению</h2>
+              <form class="c-modal-push-community__form">
+                <div class="form-group">
+                  <label for="name" class="e-label">ID сообщества</label>
+                  <div class="form-control">
+                    <input type="text" id="name" name="name" autocomplete="off" class="e-input"/>
+                  </div>
+                </div>
+                <button type="submit" class="c-modal-push-community__btn e-btn e-btn--filled">Привязать</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div tabindex="-1" role="dialog" aria-labelledby="modal-add-admin" aria-hidden="true" id="modal-verification" class="c-modal-verification modal fade">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-verification__wrapper">
+              <h2 class="modal__title">Верифицировать сотрудника</h2>
+              <form class="c-modal-verification__form">
+                <div class="form-group">
+                  <label for="name" class="e-label">Email или ID</label>
+                  <div class="form-control">
+                    <input type="text" id="name" name="name" autocomplete="off" class="e-input"/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="name" class="e-label">Введите должность</label>
+                  <div class="form-control">
+                    <input type="text" id="name" name="name" autocomplete="off" class="e-input"/>
+                  </div>
+                </div>
+                <button type="submit" class="c-modal-verification__btn e-btn e-btn--filled">Привязать к учреждению</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-create-community" tabindex="-1" role="dialog" aria-labelledby="modal-create-event" aria-hidden="true" class="c-modal-create-community modal fade">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-create-community__wrapper">
+              <div class="c-modal-create-community__head">
+                <button type="button" class="c-modal-create-community__img">
+                  <svg width="1em" height="1em" class="icon icon-photo-big ">
+                    <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-photo-big"></use>
+                  </svg>
+                </button>
+                <h2 class="modal__title">Создать сообщество</h2>
+              </div>
+              <form class="c-modal-create-community__form">
+                <div class="c-modal-create-community__form-col">
+                  <div class="form-group">
+                    <label for="name" class="e-label">Название сообщества</label>
+                    <div class="form-control">
+                      <input type="text" id="name" name="name" autocomplete="off" class="e-input"/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="c-multiselect">
+                      <label class="e-label">Отрасль</label>
+                      <div class="c-multiselect__wrapper">
+                        <div class="c-multiselect__trigger"><span>Не выбрано</span>
+                          <div class="c-multiselect__arrow">
+                            <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="c-multiselect__options">
+                          <ul class="h-reset-list">
+                            <li>
+                              <div class="c-multiselect__option">
+                                <label for="programmer">- Програмирование</label>
+                                <input type="checkbox" id="programmer" class="e-checkbox"/>
+                              </div>
+                              <ul class="h-reset-list">
+                                <li>
+                                  <div class="c-multiselect__option">
+                                    <label for="java">+ Java</label>
+                                    <input type="checkbox" id="java" class="e-checkbox"/>
+                                  </div>
+                                </li>
+                                <li> 
+                                  <div class="c-multiselect__option">
+                                    <label for="cplus">C++</label>
+                                    <input type="checkbox" id="cplus" class="e-checkbox"/>
+                                  </div>
+                                </li>
+                              </ul>
+                            </li>
+                            <li> 
+                              <div class="c-multiselect__option">
+                                <label for="aerobic">+ Аэробика</label>
+                                <input type="checkbox" id="aerobic" class="e-checkbox"/>
+                              </div>
+                            </li>
+                            <li> 
+                              <div class="c-multiselect__option">
+                                <label for="football">+ Футбол</label>
+                                <input type="checkbox" id="football" class="e-checkbox"/>
+                              </div>
+                            </li>
+                            <li> 
+                              <div class="c-multiselect__option">
+                                <label for="robot">+ Робототехника</label>
+                                <input type="checkbox" id="robot" class="e-checkbox"/>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="c-select w100-sm">
+                    <label class="e-label">Тип</label>
+                    <div class="c-select__wrapper">
+                      <div class="c-select__trigger"><span>Не выбрано</span>
+                        <div class="c-select__arrow">
+                          <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                            <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="c-select__options"><span data-value='13' class="c-select__option selected"></span><span data-value='14' class="c-select__option">1</span><span data-value='15' class="c-select__option">2</span><span data-value='16' class="c-select__option">3</span><span data-value='17' class="c-select__option">4</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="c-multiselect">
+                      <label class="e-label">Отрасль</label>
+                      <div class="c-multiselect__wrapper">
+                        <div class="c-multiselect__trigger"><span>Не выбрано</span>
+                          <div class="c-multiselect__arrow">
+                            <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="c-multiselect__options">
+                          <ul class="h-reset-list">
+                            <li>
+                              <div class="c-multiselect__option">
+                                <label for="programmer">- Програмирование</label>
+                                <input type="checkbox" id="programmer" class="e-checkbox"/>
+                              </div>
+                              <ul class="h-reset-list">
+                                <li>
+                                  <div class="c-multiselect__option">
+                                    <label for="java">+ Java</label>
+                                    <input type="checkbox" id="java" class="e-checkbox"/>
+                                  </div>
+                                </li>
+                                <li> 
+                                  <div class="c-multiselect__option">
+                                    <label for="cplus">C++</label>
+                                    <input type="checkbox" id="cplus" class="e-checkbox"/>
+                                  </div>
+                                </li>
+                              </ul>
+                            </li>
+                            <li> 
+                              <div class="c-multiselect__option">
+                                <label for="aerobic">+ Аэробика</label>
+                                <input type="checkbox" id="aerobic" class="e-checkbox"/>
+                              </div>
+                            </li>
+                            <li> 
+                              <div class="c-multiselect__option">
+                                <label for="football">+ Футбол</label>
+                                <input type="checkbox" id="football" class="e-checkbox"/>
+                              </div>
+                            </li>
+                            <li> 
+                              <div class="c-multiselect__option">
+                                <label for="robot">+ Робототехника</label>
+                                <input type="checkbox" id="robot" class="e-checkbox"/>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="c-multiselect">
+                      <label class="e-label">Профориентация</label>
+                      <div class="c-multiselect__wrapper">
+                        <div class="c-multiselect__trigger"><span>Не выбрано</span>
+                          <div class="c-multiselect__arrow">
+                            <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="c-multiselect__options">
+                          <ul class="h-reset-list">
+                            <li>
+                              <div class="c-multiselect__option">
+                                <label for="programmer">- Програмирование</label>
+                                <input type="checkbox" id="programmer" class="e-checkbox"/>
+                              </div>
+                              <ul class="h-reset-list">
+                                <li>
+                                  <div class="c-multiselect__option">
+                                    <label for="java">+ Java</label>
+                                    <input type="checkbox" id="java" class="e-checkbox"/>
+                                  </div>
+                                </li>
+                                <li> 
+                                  <div class="c-multiselect__option">
+                                    <label for="cplus">C++</label>
+                                    <input type="checkbox" id="cplus" class="e-checkbox"/>
+                                  </div>
+                                </li>
+                              </ul>
+                            </li>
+                            <li> 
+                              <div class="c-multiselect__option">
+                                <label for="aerobic">+ Аэробика</label>
+                                <input type="checkbox" id="aerobic" class="e-checkbox"/>
+                              </div>
+                            </li>
+                            <li> 
+                              <div class="c-multiselect__option">
+                                <label for="football">+ Футбол</label>
+                                <input type="checkbox" id="football" class="e-checkbox"/>
+                              </div>
+                            </li>
+                            <li> 
+                              <div class="c-multiselect__option">
+                                <label for="robot">+ Робототехника</label>
+                                <input type="checkbox" id="robot" class="e-checkbox"/>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="c-select w100-sm">
+                    <label class="e-label">Конфиденциальность</label>
+                    <div class="c-select__wrapper">
+                      <div class="c-select__trigger"><span>Не выбрано</span>
+                        <div class="c-select__arrow">
+                          <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                            <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="c-select__options"><span data-value='18' class="c-select__option selected"></span><span data-value='19' class="c-select__option">1</span><span data-value='20' class="c-select__option">2</span><span data-value='21' class="c-select__option">3</span><span data-value='22' class="c-select__option">4</span>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="e-btn e-btn--filled">Создать сообщество</button>
+                </div>
+                <div class="c-modal-create-community__form-col">
+                  <div class="form-group">
+                    <label for="organizator" class="e-label">Город</label>
+                    <div class="form-control">
+                      <input type="text" id="organizator" name="organizator" autocomplete="off" class="e-input"/>
+                    </div>
+                  </div>
+                  <div class="c-select w100-sm">
+                    <label class="e-label">Район</label>
+                    <div class="c-select__wrapper">
+                      <div class="c-select__trigger"><span>Не выбрано</span>
+                        <div class="c-select__arrow">
+                          <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                            <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="c-select__options"><span data-value='23' class="c-select__option selected"></span><span data-value='24' class="c-select__option">1</span><span data-value='25' class="c-select__option">2</span><span data-value='26' class="c-select__option">3</span><span data-value='27' class="c-select__option">4</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="c-select w100-sm">
+                    <label class="e-label">Округ</label>
+                    <div class="c-select__wrapper">
+                      <div class="c-select__trigger"><span>Не выбрано</span>
+                        <div class="c-select__arrow">
+                          <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                            <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="c-select__options"><span data-value='28' class="c-select__option selected"></span><span data-value='29' class="c-select__option">1</span><span data-value='30' class="c-select__option">2</span><span data-value='31' class="c-select__option">3</span><span data-value='32' class="c-select__option">4</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="organizator" class="e-label">Адрес</label>
+                    <div class="form-control">
+                      <input type="text" id="organizator" name="organizator" autocomplete="off" class="e-input"/>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-admin" tabindex="-1" role="dialog" aria-labelledby="modal-admin" aria-hidden="true" class="c-modal-admin modal fade">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-admin__wrapper">
+              <h2 class="modal__title">Администрирование</h2>
+              <form class="c-modal-add-admin__form">
+                <div class="form-group">
+                  <label for="name" class="e-label">ID или E-mail</label>
+                  <div class="form-control">
+                    <input type="text" id="name" name="name" autocomplete="off" class="e-input"/>
+                  </div>
+                </div>
+                <div class="c-multiselect">
+                  <label class="e-label">Права доступа</label>
+                  <div class="c-multiselect__wrapper">
+                    <div class="c-multiselect__trigger"><span>Не выбрано</span>
+                      <div class="c-multiselect__arrow">
+                        <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                          <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="c-multiselect__options">
+                      <ul class="h-reset-list">
+                        <li>
+                          <div class="c-multiselect__option">
+                            <label for="programmer">Блокировка контента</label>
+                            <input type="checkbox" id="programmer" class="e-checkbox"/>
+                          </div>
+                        </li>
+                        <li> 
+                          <div class="c-multiselect__option">
+                            <label for="aerobic">Структура РОСТ</label>
+                            <input type="checkbox" id="aerobic" class="e-checkbox"/>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="c-modal-add-admin__btn e-btn e-btn--filled">Подтвердить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-inst-adm" tabindex="-1" role="dialog" aria-labelledby="modal-inst-adm" aria-hidden="true" class="c-modal-inst-adm modal fade">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-send-invite__wrapper">
+              <h2 class="modal__title">Назначить руководителя учреждения</h2>
+              <form class="c-modal-send-invite__form">
+                <div class="form-group">
+                  <label for="name" class="e-label">Email или ID</label>
+                  <div class="form-control">
+                    <input type="text" id="name" name="name" autocomplete="off" class="e-input"/>
+                  </div>
+                </div>
+                <button type="submit" class="e-btn e-btn--filled">Назначить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-inst" tabindex="-1" role="dialog" aria-labelledby="modal-inst" aria-hidden="true" class="c-modal-inst modal fade">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-send-invite__wrapper">
+              <h2 class="modal__title">Учреждение</h2>
+              <form class="c-modal-send-invite__form">
+                <div class="form-group">
+                  <label for="name" class="e-label">Название учреждения</label>
+                  <div class="form-control">
+                    <input type="text" id="name" name="name" autocomplete="off" class="e-input"/>
+                  </div>
+                </div>
+                <div class="form-group h100">
+                  <label class="e-label">Описание учреждения (max 200 символов)</label>
+                  <div class="form-control">
+                    <textarea name="" class="e-textarea"></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="organizator" class="e-label">Город</label>
+                  <div class="form-control">
+                    <input type="text" id="organizator" name="organizator" autocomplete="off" class="e-input"/>
+                  </div>
+                </div>
+                <div class="c-select w100-sm">
+                  <label class="e-label">Район</label>
+                  <div class="c-select__wrapper">
+                    <div class="c-select__trigger"><span>Не выбрано</span>
+                      <div class="c-select__arrow">
+                        <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                          <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="c-select__options"><span data-value='33' class="c-select__option selected"></span><span data-value='34' class="c-select__option">1</span><span data-value='35' class="c-select__option">2</span><span data-value='36' class="c-select__option">3</span><span data-value='37' class="c-select__option">4</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-select w100-sm">
+                  <label class="e-label">Округ</label>
+                  <div class="c-select__wrapper">
+                    <div class="c-select__trigger"><span>Не выбрано</span>
+                      <div class="c-select__arrow">
+                        <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                          <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="c-select__options"><span data-value='38' class="c-select__option selected"></span><span data-value='39' class="c-select__option">1</span><span data-value='40' class="c-select__option">2</span><span data-value='41' class="c-select__option">3</span><span data-value='42' class="c-select__option">4</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="organizator" class="e-label">Адрес</label>
+                  <div class="form-control">
+                    <input type="text" id="organizator" name="organizator" autocomplete="off" class="e-input"/>
+                  </div>
+                </div>
+                <div class="c-select w100-sm">
+                  <label class="e-label">Образование</label>
+                  <div class="c-select__wrapper">
+                    <div class="c-select__trigger"><span>Не выбрано</span>
+                      <div class="c-select__arrow">
+                        <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                          <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="c-select__options"><span data-value='43' class="c-select__option selected"></span><span data-value='44' class="c-select__option">1</span><span data-value='45' class="c-select__option">2</span><span data-value='46' class="c-select__option">3</span><span data-value='47' class="c-select__option">4</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="organizator" class="e-label">Email</label>
+                  <div class="form-control">
+                    <input type="text" id="organizator" name="organizator" autocomplete="off" class="e-input"/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="organizator" class="e-label">Телефон</label>
+                  <div class="form-control">
+                    <input type="text" id="organizator" name="organizator" autocomplete="off" class="e-input"/>
+                  </div>
+                </div>
+                <button type="submit" class="e-btn e-btn--filled">Создать учреждение</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-inst-remove1" tabindex="-1" role="dialog" aria-labelledby="modal-remove1" aria-hidden="true" class="c-modal-inst-remove1 modal fade">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-file-load__wrapper">
+              <h2 class="modal__title">Удалить структуру?</h2>
+              <p class="modal__subtitle modal__subtitle--tac">Все созданные учреждения в это структуре будут так же удалены </p>
+              <button type="submit" class="e-btn e-btn--filled c-modal-inst-remove__btn">Удалить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-inst-remove2" tabindex="-1" role="dialog" aria-labelledby="modal-remove2" aria-hidden="true" class="c-modal-inst-remove1 modal fade">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-file-load__wrapper">
+              <h2 class="modal__title">Удалить структуру?</h2>
+              <p class="modal__subtitle modal__subtitle--tac">Вы уверены?</p>Отменить это действие будет невозможно.
+              <button type="submit" class="e-btn e-btn--filled e-btn--red c-modal-inst-remove__btn">Да, удалить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-inst-remove3" tabindex="-1" role="dialog" aria-labelledby="modal-remove3" aria-hidden="true" class="c-modal-inst-remove1 modal fade">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-file-load__wrapper">
+              <h2 class="modal__title">Невозможно удалить структуру</h2>
+              <p class="modal__subtitle modal__subtitle--tac">Эта структура имеет промежуточный уровень.Сначала удалите предыдущие уровни.</p>
+              <button type="submit" class="e-btn e-btn--filled c-modal-inst-remove__btn">ОК</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-structure" tabindex="-1" role="dialog" aria-labelledby="modal-add-admin" aria-hidden="true" class="c-modal-structure modal fade">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-send-invite__wrapper">
+              <h2 class="modal__title">Структура РОСТ</h2>
+              <form class="c-modal-send-invite__form">
+                <div class="form-group">
+                  <label for="name" class="e-label">Название структуры</label>
+                  <div class="form-control">
+                    <input type="text" id="name" name="name" autocomplete="off" class="e-input"/>
+                  </div>
+                </div>
+                <button type="submit" class="e-btn e-btn--filled">Добавить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-create-protocol" tabindex="-1" role="dialog" aria-labelledby="modal-create-protocol" aria-hidden="true" class="c-modal-create-protocol modal fade">
+      <div role="document" class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="modal__close">
+            <svg width="1em" height="1em" class="icon icon-close ">
+              <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal-body">
+            <div class="c-modal-create-protocol__wrapper">
+              <h2 class="modal__title">Создание протокола</h2>
+              <form class="c-modal-create-protocol__form">
+                <div class="form-group">
+                  <label for="name" class="e-label">Название протокола</label>
+                  <div class="form-control">
+                    <input type="text" placeholder="Введите название" id="name" name="name" autocomplete="off" class="e-input"/>
+                  </div>
+                </div>
+                <div class="c-select w100-sm">
+                  <label class="e-label">Дата проведения мероприятия</label>
+                  <div class="c-select__wrapper">
+                    <div class="c-select__trigger"><span>Не выбрано</span>
+                      <div class="c-select__arrow">
+                        <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                          <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="c-select__options"><span data-value='48' class="c-select__option selected"></span><span data-value='49' class="c-select__option">1</span><span data-value='50' class="c-select__option">2</span><span data-value='51' class="c-select__option">3</span><span data-value='52' class="c-select__option">4</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="c-multiselect">
+                    <label class="e-label">Профориентация</label>
+                    <div class="c-multiselect__wrapper">
+                      <div class="c-multiselect__trigger"><span>Не выбрано</span>
+                        <div class="c-multiselect__arrow">
+                          <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                            <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="c-multiselect__options">
+                        <ul class="h-reset-list">
+                          <li>
+                            <div class="c-multiselect__option">
+                              <label for="programmer">- Програмирование</label>
+                              <input type="checkbox" id="programmer" class="e-checkbox"/>
+                            </div>
+                            <ul class="h-reset-list">
+                              <li>
+                                <div class="c-multiselect__option">
+                                  <label for="java">+ Java</label>
+                                  <input type="checkbox" id="java" class="e-checkbox"/>
+                                </div>
+                              </li>
+                              <li> 
+                                <div class="c-multiselect__option">
+                                  <label for="cplus">C++</label>
+                                  <input type="checkbox" id="cplus" class="e-checkbox"/>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li> 
+                            <div class="c-multiselect__option">
+                              <label for="aerobic">+ Аэробика</label>
+                              <input type="checkbox" id="aerobic" class="e-checkbox"/>
+                            </div>
+                          </li>
+                          <li> 
+                            <div class="c-multiselect__option">
+                              <label for="football">+ Футбол</label>
+                              <input type="checkbox" id="football" class="e-checkbox"/>
+                            </div>
+                          </li>
+                          <li> 
+                            <div class="c-multiselect__option">
+                              <label for="robot">+ Робототехника</label>
+                              <input type="checkbox" id="robot" class="e-checkbox"/>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-select w100-sm">
+                  <label class="e-label">Тип протокола</label>
+                  <div class="c-select__wrapper">
+                    <div class="c-select__trigger"><span>Не выбрано</span>
+                      <div class="c-select__arrow">
+                        <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                          <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="c-select__options"><span data-value='53' class="c-select__option selected"></span><span data-value='54' class="c-select__option">1</span><span data-value='55' class="c-select__option">2</span><span data-value='56' class="c-select__option">3</span><span data-value='57' class="c-select__option">4</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-select w100-sm">
+                  <label class="e-label">Пол</label>
+                  <div class="c-select__wrapper">
+                    <div class="c-select__trigger"><span>Не выбрано</span>
+                      <div class="c-select__arrow">
+                        <svg width="1em" height="1em" class="icon icon-down-arrow ">
+                          <use xlink:href="s/images/useful/svg/theme/symbol-defs.svg#icon-down-arrow"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="c-select__options"><span data-value='58' class="c-select__option selected"></span><span data-value='59' class="c-select__option">1</span><span data-value='60' class="c-select__option">2</span><span data-value='61' class="c-select__option">3</span><span data-value='62' class="c-select__option">4</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-wrap">
+                  <label class="e-label">Возраст</label>
+                  <div class="form-row form-row-two">
+                    <div class="form-group">
+                      <label for="organizator" class="e-label">от</label>
+                      <div class="form-control">
+                        <input type="text" id="organizator" name="organizator" autocomplete="off" class="e-input"/>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="organizator" class="e-label">до</label>
+                      <div class="form-control">
+                        <input type="text" id="organizator" name="organizator" autocomplete="off" class="e-input"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="c-modal-create-protocol__btn e-btn e-btn--filled">Сохранить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="s/js/main.js"></script>
+  </body>
+</html>
