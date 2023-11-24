@@ -1,0 +1,64 @@
+[
+  {
+    "id": 1,
+    "title": "LIGHT AND BRIGHT",
+    "slides": [
+      {
+        "slideImg": "1.jpg"
+      },
+      {
+        "slideImg": "2.jpg"
+      },
+      {
+        "slideImg": "1.jpg"
+      }
+    ],
+    "characteristics": [
+      {
+        "characteristicTtl": "The type of project:",
+        "characteristicVal": "Appartments design"
+      },
+      {
+        "characteristicTtl": "The square:",
+        "characteristicVal": "52 м2"
+      },
+      {
+        "characteristicTtl": "The room:",
+        "characteristicVal": "Living room"
+      }
+    ],
+    "desc": "Pellentesque nec at eget nisl id. Amet pharetra, vitae a enim porttitor fermentum dui neque, blandit. Sit porttitor vel etiam ac fermentum.",
+    "link": "/"
+  },
+  {
+    "id": 2,
+    "title": "Test of Test",
+    "slides": [
+      {
+        "slideImg": "1.jpg"
+      },
+      {
+        "slideImg": "2.jpg"
+      },
+      {
+        "slideImg": "1.jpg"
+      }
+    ],
+    "characteristics": [
+      {
+        "characteristicTtl": "1The type of project:",
+        "characteristicVal": "1Appartments design"
+      },
+      {
+        "characteristicTtl": "2The square:",
+        "characteristicVal": "252 м2"
+      },
+      {
+        "characteristicTtl": "3The room:",
+        "characteristicVal": "3Living room"
+      }
+    ],
+    "desc": "Pellentesque nec at eget nisl id. Amet pharetra, vitae a enim porttitor fermentum dui neque, blandit. Sit porttitor vel etiam ac fermentum.",
+    "link": "/"
+  }
+]
